@@ -8,6 +8,9 @@ window.onload = function() {
     /* Remove mobile header */
     $("#header-mobile").remove();
 
+    /* Load sidebar js */
+    //$.getScript("js/sidebar.js", function(){});
+
     /* Initialize particles.js if viewing on desktop */
     Particles.init({
       selector: '.background',
@@ -31,6 +34,10 @@ window.onload = function() {
 
     /* Remove desktop header */
     $("#header").remove();
+
+    /* Remove sidebar */
+    $("#side-bar-open").remove();
+    $("#side-bar-closed").remove();
   }
 };
 

@@ -68,7 +68,11 @@ a:hover {
   z-index: 1;
 }
 
-#side-bar {
+/*
+** Side bar **
+*/
+
+#side-bar-open {
   background: red;
 
   /* Fix to right-middle */
@@ -79,23 +83,37 @@ a:hover {
 
   z-index: 10;
 }
-#side-bar>ul {
+#side-bar-open>ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 150px;
   background-color: #f1f1f1;
 }
-#side-bar>ul li a {
+#side-bar-open>ul li a {
   display: block;
   color: #2C3E50;
   padding: 8px 16px;
   text-decoration: none;
 }
-#side-bar>ul li a:hover {
+#side-bar-open>ul li a:hover {
   background-color: #555;
   color: white;
 }
+
+#side-bar-closed {
+  /* Fix to right-middle */
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+
+  z-index: 10;
+}
+
+/*
+** Mail signup button **
+*/
 
 #mail-signup {
   border-radius: 25px;
@@ -108,7 +126,7 @@ a:hover {
 /* Make signup button smaller on mobile */
 @media (max-width: 961px) {
   #mail-signup {
-    font-size: 6vw; 
+    font-size: 6vw;
   }
 }
 

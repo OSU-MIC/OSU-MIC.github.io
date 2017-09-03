@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Medical Innovation Club at The Ohio State University</title>
 
@@ -18,13 +19,16 @@
   <![endif]-->
 </head>
 <body>
-  <div id="header">
+  <div id="header"> <!-- Desktop header -->
     <div id="logo-center">
       <img src="logo.png" id="logo" />
     </div>
-
     <!-- particles.js -->
     <canvas class="background"></canvas>
+  </div>
+
+  <div id="header-mobile" align="middle"> <!-- Mobile header (no particles) -->
+    <img src="logo.png" />
   </div>
 
   <!--
@@ -41,7 +45,8 @@
   <div id="main">
     <div class="container">
       <div class="row text-center">
-        <h1><a id="mail-signup" href="#">Sign up for our mailing list!</a></h1>
+        <br />
+        <a id="mail-signup" href="#">Sign up for our mailing list!</a>
       </div>
 
       <div class="row" id="about-start">
@@ -82,7 +87,7 @@
           <h1><strong>For more information contact</strong></h1>
           <h3>
             <a href="mailto:czarnecki.10@osu.edu">Ryan Czarneck - Secretary - czarnecki.10@osu.edu</a>
-            <br />
+            <br /><br />
             <a href="mailto:shingler.9@osu.edu">Lauren Shingler - President - shingler.9@osu.edu</a>
           </h3>
           <!-- END: Contact column -->

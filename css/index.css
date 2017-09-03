@@ -39,6 +39,10 @@ a:hover {
   background-color: white;
 }
 
+#header-mobile > img {
+  max-width: 100%;
+}
+
 #main {
   position: absolute;
   z-index: 2;
@@ -47,7 +51,6 @@ a:hover {
   height: 60%;
   background-color: inherit;
 
-  /*color: #12263a;*/
   color: #2C3E50;
 }
 
@@ -99,7 +102,16 @@ a:hover {
   border: 2px solid #1695B6;
   padding: 0.4em;
   text-decoration: none;
+
+  font-size: 3em;
 }
+/* Make signup button smaller on mobile */
+@media (max-width: 961px) {
+  #mail-signup {
+    font-size: 6vw; 
+  }
+}
+
 #mail-signup:hover {
   border: 2px solid #B0E4E3;
 }

@@ -19,6 +19,13 @@ body {
   font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
 }
 
+a {
+  color: #1695B6
+}
+a:hover {
+  color: #B0E4E3;
+}
+
 /*
 ---- ID's ----
 */
@@ -85,6 +92,16 @@ body {
 #side-bar>ul li a:hover {
   background-color: #555;
   color: white;
+}
+
+#mail-signup {
+  border-radius: 25px;
+  border: 2px solid #1695B6;
+  padding: 0.4em;
+  text-decoration: none;
+}
+#mail-signup:hover {
+  border: 2px solid #B0E4E3;
 }
 
 /*

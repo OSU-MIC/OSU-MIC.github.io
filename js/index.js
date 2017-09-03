@@ -24,10 +24,10 @@ window.onload = function() {
 /*
 Smooth scrolling
 */
-$(document).on('click', 'a', function(event){
+$(document).on('click', 'a.smooth-scroll', function(event){
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
+      scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
 });

@@ -1,0 +1,72 @@
+/*
+  Import ProximaNova font
+*/
+/*
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url("../fonts/ProximaNova/ProximaNova-Regular.otf") format("opentype");
+}
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+
+  /* fonts */
+  /*font-family: ProximaNova-Regular, sans-serif;*/
+  font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
+}
+
+/*
+---- ID's ----
+*/
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: white;
+}
+
+#main {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  width: 100%;
+  height: 60%;
+  background-color: inherit;
+
+  /*color: #12263a;*/
+  color: #2C3E50;
+}
+
+#logo-center {
+  margin: auto;
+  width: 400px; /* Has to be same width as logo */
+}
+#logo {
+  /* center */
+  position: absolute;
+
+  width: 400px; /*303px*/
+  height: 264px; /*172px*/
+
+  z-index: 1;
+}
+
+/*
+---- Classes ----
+*/
+
+/* particles.js */
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}

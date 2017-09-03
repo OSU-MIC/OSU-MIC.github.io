@@ -1,10 +1,10 @@
 /*
-  Import ProximaNova font
+Import ProximaNova font
 */
 /*
 @font-face {
-    font-family: ProximaNova-Regular;
-    src: url("../fonts/ProximaNova/ProximaNova-Regular.otf") format("opentype");
+font-family: ProximaNova-Regular;
+src: url("../fonts/ProximaNova/ProximaNova-Regular.otf") format("opentype");
 }
 */
 
@@ -71,14 +71,14 @@ body {
 }
 #side-bar>ul {
   list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 150px;
-    background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
 }
 #side-bar>ul li a {
   display: block;
-  color: #000;
+  color: #2C3E50;
   padding: 8px 16px;
   text-decoration: none;
 }
@@ -101,13 +101,13 @@ body {
 }
 
 .foot {
-    background: gray;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: 50px;
-    /* Center
-    left: 50%;
-    transform: translateX(-50%);
-    */
+  background: gray;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  /* Center
+  left: 50%;
+  transform: translateX(-50%);
+  */
 }

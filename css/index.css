@@ -158,3 +158,26 @@ a:hover {
   transform: translateX(-50%);
   */
 }
+
+/*
+** Social Media **
+*/
+social-media-image {
+  padding: 0;
+}
+.social-media-fa {
+  color: #1695B6;
+  padding: 10px 20px;
+}
+/*
+.social-media-fa:hover {
+  color: #B0E4E3;
+}*/
+@media (min-width: 800px) {
+  .grow {
+    transition: all .2s ease-in-out;
+  }
+  .grow:hover {
+    transform: scale(1.2);
+  }
+}

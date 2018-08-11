@@ -26,12 +26,19 @@ a:hover {
   color: #B0E4E3;
 }
 
+.darkblue {
+  color: #2C3E50;
+}
+.lightblue {
+  color: #1695B6;
+}
+
 /*
----- ID's ----
+** Top ID's **
 */
 
 #header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -48,7 +55,6 @@ a:hover {
   z-index: 2;
   top: 40%;
   width: 100%;
-  height: 60%;
   background-color: inherit;
 
   color: #2C3E50;
@@ -69,73 +75,123 @@ a:hover {
 }
 
 /*
-** Side bar **
+** Layout **
 */
 
-#side-bar-open {
-  background: red;
-
-  /* Fix to right-middle */
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-
-  z-index: 10;
-}
-#side-bar-open>ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 150px;
-  background-color: #f1f1f1;
-}
-#side-bar-open>ul li a {
-  display: block;
-  color: #2C3E50;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-#side-bar-open>ul li a:hover {
-  background-color: #555;
-  color: white;
+.shadow {
+  -webkit-box-shadow: 0px -1px 12px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px -1px 12px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px -1px 12px 0px rgba(0,0,0,0.25);
 }
 
-#side-bar-closed {
-  /* Fix to right-middle */
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
+.body-margin {
+  margin-left: 15%;
+  margin-right: 15%;
+}
 
-  z-index: 10;
+.flex-container {
+  display: flex;
+  flex-direction: column; /* main axis */
+}
+
+.center {
+  align-self: center;
+}
+
+.small-hr {
+  width: 100%;
+  height: 2px;
+  background: #2C3E50;
+  border: none;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+.card-text {
+  padding: 2px 16px;
 }
 
 /*
-** Mail signup button **
+** Top links **
 */
 
 #mail-signup {
-  border-radius: 25px;
-  border: 2px solid #1695B6;
-  padding: 0.4em;
   text-decoration: none;
-
   font-size: 3em;
 }
+
 /* Make signup button smaller on mobile */
 @media (max-width: 961px) {
   #mail-signup {
     font-size: 6vw;
   }
 }
-
+/*
 #mail-signup:hover {
   border: 2px solid #B0E4E3;
 }
+*/
 
 /*
----- Classes ----
+** Leadership **
+*/
+
+#leadership {}
+
+#leaderboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.leaderbox {
+  font-size: 1.5em;
+  margin: 1em 0.5em;
+
+  width: 12em;
+}
+.leaderbox h4 {
+    margin-top: 0.25em; 
+    margin-bottom: 0;
+}
+
+/* Make leaderbox button smaller on mobile */
+/*
+@media (max-width: 961px) {
+  .leaderbox {
+    width: 8em;
+    font-size: 1em;
+  }
+  .leaderbox h4 {
+    margin-top: 0; 
+  }
+}
+*/
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+#leadership a {
+  text-decoration: none;
+}
+
+/*
+** ETC **
 */
 
 /* particles.js */
@@ -169,10 +225,10 @@ social-media-image {
   color: #1695B6;
   padding: 10px 20px;
 }
-/*
 .social-media-fa:hover {
   color: #B0E4E3;
-}*/
+}
+/*
 @media (min-width: 800px) {
   .grow {
     transition: all .2s ease-in-out;
@@ -180,4 +236,4 @@ social-media-image {
   .grow:hover {
     transform: scale(1.2);
   }
-}
+}*/

@@ -8,17 +8,16 @@
 
   <title>Medical Innovation Club at The Ohio State University</title>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- CDN -->
   <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+  <!-- Styling -->
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+<![endif]-->
 </head>
 <body>
   <div id="header"> <!-- Desktop header -->
@@ -33,39 +32,38 @@
     <img src="res/logo_no-trans.png">
   </div>
 
-<!--
-  <div id="side-bar-open" style="visibility:hidden;">
-    <ul>
-      <li><a href="#header" class="smooth-scroll"><h3>Go to top</h3></a></li>
-      <li><a href="#about-start" class="smooth-scroll"><h3>About</h3></a></li>
-      <li><a href="#projects-start" class="smooth-scroll"><h3>Projects</h3></a></li>
-      <li><a href="#contact-start" class="smooth-scroll"><h3>Contact</h3></a></li>
-    </ul>
-  </div>
-
-  <div id="side-bar-closed">
-    <img src="res/tri-dot.png">
-  </div>
--->
-
-  <div id="main">
-    <div class="container">
-      <div class="row text-center">
+  <div id="main" class="shadow">
+    <div class="flex-container body-margin">
+      <br />
+      <br />
+      <div class="center" style="text-align:center">
         <br />
         <a id="mail-signup" href="https://docs.google.com/forms/d/e/1FAIpQLSeFmRaHnKfeWF_XmBEPL5PmejzRsYZoq5GvVNzW6haAQCVBGA/viewform?usp=pp_url&entry.2005620554&entry.1045781291&entry.404638918">Sign up for our mailing list!</a>
-        <br /><br /><br />
       </div>
 
-      <div class="row social-media text-center">
+      <div class="social-media center">
         <!--<a class="social-media-image" href="https://www.facebook.com/"><i class="grow social-media-fa fa fa-facebook fa-3x"></i></a>-->
         <a class="social-media-image" href="https://twitter.com/OSU_MIC_" target="_blank"><i class="grow social-media-fa fa fa-twitter fa-3x"></i></a>
         <a class="social-media-image" href="https://www.instagram.com/mic_osu/" target="_blank"><i class="grow social-media-fa fa fa-instagram fa-3x"></i></a>
         <!--<a class="social-media-image" target="_blank"><span class="grow">Venmo</span></a>-->
       </div>
 
+      <br>
+
+      <div class="center" style="font-size:1.5em;text-align:center">
+        <div style="text-align:center">Contact</div>
+        <br>
+        <a href="mailto:czarnecki.10@osu.edu">Ryan Czarnecki - Secretary - czarnecki.10@osu.edu</a>
+        <br><br>
+        <a href="mailto:shingler.9@osu.edu">Lauren Shingler - President - shingler.9@osu.edu</a>
+      </div>
+
+      <hr class="small-hr">
+
+      <!-- BEGIN: Who we are -->
       <div class="row" id="about-start">
         <!-- BEGIN: Who we are column -->
-        <div class="col-md-10">
+        <div class="">
           <h1><strong>Who we are</strong></h1>
           <h3>
             The Medical Innovation Club is Ohio State's newest club, striving to be a one-of-a-kind organization.
@@ -76,28 +74,87 @@
           <h3>
             In the Medical Innovation Club, we strive to solve some of medicine's most difficult problems. If you are looking to gain real biomedical project experience, work on a team with students from a variety of disciplines, see your ideas transform into a physical product, or become part of cutting-edge medical advancement, the Medical Innovation Club is for you! Students from all majors are encouraged to join, as we try to emulate the diversity of professional project teams.
           </h3>
-          <!-- END: Who we are column -->
         </div>
-        <div class="col-md-2"></div>
       </div>
+      <!-- END: Who we are -->
 
-      <div class="row" id="meetings-start">
-        <!-- BEGIN: Projects column -->
-        <div class="col-md-10">
-          <h1><strong>Meeting notes</strong></h1>
-          <h3>
-            <ul>
-              <li><a href="meeting-notes/GB10-10.pdf">GB 10/10</a></li>
-            </ul>
-          </h3>
-          <!-- END: Projects column -->
+      <!-- BEGIN: Leadership -->
+      <div class="row" id="leadership">
+        <h1><strong>Leadership</strong></h1>
+        <div id="leaderboxes">
+        <!---->
+         <div class="leaderbox card">
+            <img src="./css/pics/lauren.png" alt="Lauren Shingler" width="100%">
+            <div class="card-text">
+              <h4><a href="mailto:shingler.9@osu.edu">
+                Lauren Shingler<br>
+                - President
+              </a></h4> 
+              <p>
+                Biomedical Engineering<br>
+              </p>
+            </div>
+          </div>
+          <!---->
+           <div class="leaderbox card">
+            <img src="./css/pics/tony.png" alt="Tony Mango" width="100%">
+            <div class="card-text">
+              <h4><a href="mailto:mango.9@osu.edu">
+                Tony Mango<br>
+                - VP (Internal)
+              </a></h4> 
+              <p>
+                Biomedical Engineering<br>
+              </p>
+            </div>
+          </div>
+          <!---->
+           <div class="leaderbox card">
+            <img src="./css/pics/patrick.png" alt="Patrick Smith" width="100%">
+            <div class="card-text">
+              <h4><a href="mailto:smith.10669@osu.edu">
+                Patrick Smith<br>
+                - VP (External)
+              </a></h4> 
+              <p>
+                Biomedical Engineering<br>
+              </p>
+            </div>
+          </div>
+          <!---->
+           <div class="leaderbox card">
+            <img src="./css/pics/ethan.png" alt="Ethan Wolfe" width="100%">
+            <div class="card-text">
+              <h4><a href="mailto:wolfe.767@osu.edu">
+                Ethan Wolfe<br>
+                - Treasurer, Webmaster
+              </a></h4> 
+              <p>
+                Computer Science<br>
+              </p>
+            </div>
+          </div>
+          <!---->
+           <div class="leaderbox card">
+            <img src="./css/pics/ryan.png" alt="Ryan Czarnecki" width="100%">
+            <div class="card-text">
+              <h4><a href="mailto:czarnecki.10@osu.edu">
+                Ryan Czarnecki<br>
+                - Secretary
+              </a></h4> 
+              <p>
+                Chemistry<br>
+              </p>
+            </div>
+          </div>
+          <!---->
         </div>
-        <div class="col-md-2"></div>
       </div>
+      <!-- END: Leadership -->
 
+      <!-- BEGIN: Projects -->
       <div class="row" id="projects-start">
-        <!-- BEGIN: Projects column -->
-        <div class="col-md-10">
+        <div class="">
           <h1><strong>Projects</strong></h1>
           <h3>
             <ul>
@@ -108,24 +165,39 @@
               <li>Wheelchair storage attachment</li>
             </ul>
           </h3>
-          <!-- END: Projects column -->
         </div>
-        <div class="col-md-2"></div>
       </div>
+      <!-- END: Projects -->
 
+      <!-- BEGIN: Meetings -->
+      <div class="row" id="meetings-start">
+        <div class="">
+          <h1><strong>Meeting notes</strong></h1>
+          <h3>
+            <ul>
+              <li><a href="meeting-notes/GB10-10.pdf">GB 10/10</a></li>
+            </ul>
+          </h3>
+        </div>
+      </div>
+      <!-- END: Meetings -->
+
+      <!-- OLD
       <div class="row" id="contact-start">
-        <!-- BEGIN: Contact column -->
-        <div class="col-md-10">
+        <div class="">
           <h1><strong>For more information contact</strong></h1>
           <h3>
             <a href="mailto:czarnecki.10@osu.edu">Ryan Czarnecki - Secretary - czarnecki.10@osu.edu</a>
             <br /><br />
             <a href="mailto:shingler.9@osu.edu">Lauren Shingler - President - shingler.9@osu.edu</a>
           </h3>
-          <!-- END: Contact column -->
         </div>
-        <div class="col-md-2"></div>
       </div>
+      -->
+
+
+
+
     </div> <!-- END: container -->
   </div> <!-- END: main -->
 
